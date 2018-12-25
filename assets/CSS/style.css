@@ -1,15 +1,43 @@
+html, body {
+    margin: 0;
+}
+
 body {
-    background-color: white;
+    background-color: black;
 }
 
-@font-face {
-    font-family: "Starjout";
-    src:url("font/star_jedi/starjout/Starjout.ttf");
+.fsVidContainer {
+    position: relative;
+    height: 94.5vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
+.fsVidContainer video {
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fsVideoContent {
+    width: 100% !important;
+}
+
+/* -------------------------------------------------------- */
+/* Custom Fonts */
+/* -------------------------------------------------------- */
 @font-face {
-    font-family: "Starjhol";
-    src:url("font/star_jedi/starjedi/Starjhol.ttf");
+    font-family: "Technotot";
+    src:url("font/technotot/Technotot.otf");
 }
 
 @font-face {
@@ -17,30 +45,92 @@ body {
     src:url("font/star_jedi/stjedise/STJEDISE.TTF");
 }
 
-@font-face {
-    font-family: "Starjout";
-    src:url("font/star_jedi/starjout/Starjout.ttf");
-}
-
+/* -------------------------------------------------------- */
+/* Navbar */
+/* -------------------------------------------------------- */
 .navbar {
-    background-color: black;
+    background-color: rgb(255, 0, 0);
 }
 
 .navbar a {
-    color: white;
+    color: black;
+    font-size: 2rem;
+    font-family: "Technotot";
 }
 
+/* -------------------------------------------------------- */
+/* Main-Content */
+/* -------------------------------------------------------- */
 .jumbotron {
+    
     background-color: white;
-    border: 4px solid black;
-    border-radius: 25px;
-    padding: 10px;
-    margin-top: 25px;
+    border: 1px solid black;
+    border-radius: 205px;
+    box-shadow: inset 0 0 290px 150px rgb(255, 0, 0);
+    padding: 60px;
+    margin-top:  23rem;
+    margin-bottom: 35px;
+    height: 45rem;
+    text-align: center;
 }
 
+/* -------------------------------------------------------- */
+/* Intro-Display */
+/* -------------------------------------------------------- */
+#intro {
+    height: 100%;
+}
+
+/* Intro-Display-Font */
 h1 {
     font-family: "Stjedise";
     color: black;
-    font-size: 3.5rem;
+    font-size: 8.5rem;
+    -webkit-text-stroke: 5px white;
 }
+
+/* Intro-Display-Button */
+.btn {
+    width: 10rem;
+    padding: 20px;
+    border: 10px solid black;
+    border-radius: 25px;
+    margin: 2rem;
+    background-color: white;
+    font-family: "Stjedise";
+    font-size: 2rem;
+    color: white;
+    background-color: black
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: black; 
+}
+
+/* -------------------------------------------------------- */
+/* Question-Display */
+/* -------------------------------------------------------- */
+#qBlock {
+    display: none;
+}
+
+#multipleChoice {
+    text-align: left;
+    font-size: 2rem;
+}
+
+input {
+    margin: 1rem;
+}
+
+#submit {
+    margin: 0 25px 0 25px;
+    border: 4px solid black;
+    border-radius: 20px;
+}
+
+
+
 

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="assets/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="assets/images/droid-helmet.png" />
 
     <!-- Page Title -->
     <title>Star Wars Trivia 1.0</title>
@@ -29,23 +29,51 @@
 </head>
 
 <body>
-
     <nav id="customNavbar" class="navbar sticky-top">
         <a class="navbar-brand" href="#">
-            <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="assets/images/droid-helmet.png" width="50" height="50" class="d-inline-block align-top" alt="">
             Movie Trivia
         </a>
     </nav>
+    <div class="fsVidContainer">
 
-    <div class="container">
-        <div class="jumbotron text-center">
-            <h1>Star<br>Wars<br>Trivia</h1>
+        <video autoplay loop muted>
+            <source src="assets/video/stars.mp4" type="video/mp4" />
+        </video>
+
+        <div class="fsVideoContent">
+
+
+            <div class="container">
+                <div class="jumbotron text-center">
+
+                    <!-- Introduction -->
+                    <div id="intro">
+                        <h1>Star<br>Wars<br>Trivia</h1>
+                        <button id="start" type="button" class="btn">Start</button>
+                    </div>
+
+                    <!-- Questions -->
+                    <div id="qBlock">
+                        <h2 id="test_status"></h2>
+                        <h3><span id="timer">00:15</span></h3>
+                        <div id="question"></div>
+                        <div id="multipleChoice"></div>
+                    </div>
+
+                    <!-- Answers -->
+                    <div id="answers"></div>
+
+                    <!-- Results -->
+                    <div id="results"></div>
+                </div>
+            </div>
         </div>
     </div>
 
-
     <!-- JavaScript -->
     <script src="assets/JavaScript/app.js"></script>
+    <audio src="assets/music/themeSong.mp3"  loop></audio>
 </body>
 
 </html>
