@@ -45,6 +45,10 @@ body {
     src:url("font/star_jedi/stjedise/STJEDISE.TTF");
 }
 
+@font-face {
+    font-family: "Tech-Headline";
+    src: url("font/tech_headlines/Tech\ Headlines.ttf");
+}
 /* -------------------------------------------------------- */
 /* Navbar */
 /* -------------------------------------------------------- */
@@ -116,7 +120,12 @@ h1 {
     display: none;
 }
 
+#qBlock {
+    font-family: "Tech-Headline";
+}
+
 #multipleChoice {
+    padding: 3rem;
     text-align: left;
     font-size: 2rem;
 }
@@ -131,6 +140,23 @@ input {
     border-radius: 20px;
 }
 
+#answers {
+    display: none;
+}
 
+#answers h2 {
+    font-size: 5rem;
+}
 
+#answers h3 {
+    font-size: 3rem;
+}
 
+#results {
+    font-family: "Tech-Headline";
+    display: none;
+}
+
+#results h2 {
+    padding: 5rem;
+}
