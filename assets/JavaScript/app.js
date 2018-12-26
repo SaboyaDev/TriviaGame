@@ -62,9 +62,9 @@ function renderQuestion() {
         chB = questionList[pos][2];
         chC = questionList[pos][3];
         $("#question").append("<h2>" + question + "</h2>");
-        $("#multipleChoice").append("<input type='checkbox' name='choices' value='A'>" + chA + "<br>");
-        $("#multipleChoice").append("<input type='checkbox' name='choices' value='B'>" + chB + "<br>");
-        $("#multipleChoice").append("<input type='checkbox' name='choices' value='C'>" + chC + "<br><br>");
+        $("#multipleChoice").append("<input type='radio' name='choices' value='A'>" + chA + "<br>");
+        $("#multipleChoice").append("<input type='radio' name='choices' value='B'>" + chB + "<br>");
+        $("#multipleChoice").append("<input type='radio' name='choices' value='C'>" + chC + "<br><br>");
         $("#multipleChoice").append("<button id='submit' style='vertical-align:middle'> <span>Submit</span></button>");
         // Starts the counter and calls the Decrement Function
         intervalId = setInterval(decrement, 1000);
