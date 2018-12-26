@@ -29,31 +29,34 @@
 </head>
 
 <body>
+    <!-- Main Nav -->
     <nav id="customNavbar" class="navbar sticky-top">
         <a class="navbar-brand" href="#">
             <img src="assets/images/droid-helmet.png" width="50" height="50" class="d-inline-block align-top" alt="">
             Movie Trivia
         </a>
     </nav>
+
+    <!-- Full-Screen Wrapper -->
     <div class="fsVidContainer">
 
         <video autoplay loop muted>
             <source src="assets/video/stars.mp4" type="video/mp4" />
         </video>
 
+        <!-- Main Content Wrapper On Top of Video -->
         <div class="fsVideoContent">
-
 
             <div class="container">
                 <div class="jumbotron text-center">
 
-                    <!-- Introduction -->
+                    <!-- Introduction Section-->
                     <div id="intro">
                         <h1>Star<br>Wars<br>Trivia</h1>
                         <button id="start" type="button" class="btn">Start</button>
                     </div>
 
-                    <!-- Questions -->
+                    <!-- Questions Section -->
                     <div id="qBlock">
                         <h2 id="test_status"></h2>
                         <h3><span id="timer">00:10</span></h3>
@@ -61,16 +64,17 @@
                         <div id="multipleChoice"></div>
                     </div>
 
-                    <!-- Answers -->
+                    <!-- Answers Section-->
                     <div id="answers"></div>
 
-                    <!-- Results -->
+                    <!-- Results Section -->
                     <div id="results">
                         <h2>Final Results</h2>
                         <h3>Rights: <span id="rights"></span></h3>
                         <h3>Wrong: <span id="wrong"></span></h3>
                         <h3>Score: <span id="finalScore"></span></h3>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -78,7 +82,9 @@
 
     <!-- JavaScript -->
     <script src="assets/JavaScript/app.js"></script>
-    <audio src="assets/music/themeSong.mp3" autoplay loop></audio>
+
+    <!-- Background Music -->
+    <audio src="assets/music/themeSong.mp3"  loop></audio>
 </body>
 
 </html>
