@@ -53,11 +53,11 @@ body {
 /* Navbar */
 /* -------------------------------------------------------- */
 .navbar {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 .navbar a {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-family: "Technotot";
 }
@@ -67,15 +67,18 @@ body {
 /* -------------------------------------------------------- */
 .jumbotron {
     
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 205px;
-    box-shadow: inset 0 0 290px 150px rgb(255, 0, 0);
+    background-color: black;
+    /* border: 1px solid black; */
+    border-radius: 305px;
+    box-shadow: inset 0 0 45px 35px rgb(255, 255, 255);
     padding: 60px;
-    margin-top:  23rem;
+    margin-top:  18rem;
     margin-bottom: 35px;
-    height: 45rem;
+    height: 55rem;
     text-align: center;
+    outline: none;
+    color: #FFFFFF;
+    opacity: 0.85;
 }
 
 /* -------------------------------------------------------- */
@@ -91,20 +94,27 @@ h1 {
     color: black;
     font-size: 8.5rem;
     -webkit-text-stroke: 5px white;
+    letter-spacing: 1.5rem;
+    text-align: center;
 }
 
 /* Intro-Display-Button */
 .btn {
     width: 10rem;
     padding: 20px;
-    border: 10px solid black;
+    border: 0.2rem solid rgb(255, 255, 255);
     border-radius: 25px;
-    margin: 2rem;
+    margin-top: 7rem;
     background-color: white;
-    font-family: "Stjedise";
+    font-family: "Tech-Headline";
+    letter-spacing: 0.1rem;
+    text-align: center;
     font-size: 2rem;
     color: white;
-    background-color: black
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(0, 0, 0);
+    outline: none;
 
 }
 
@@ -113,15 +123,71 @@ h1 {
     color: black; 
 }
 
+.btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#submit {
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.1s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 9px rgb(0, 0, 0);
+    outline: none;
+}
+  
+#submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+
+#submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+}
+
+#submit:hover {
+    background-color: white;
+    color: black;
+}
+
+#submit:hover span {
+    padding-right: 25px;
+}
+
+#submit:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#submit:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
 /* -------------------------------------------------------- */
 /* Question-Display */
 /* -------------------------------------------------------- */
-#qBlock {
-    display: none;
-}
 
 #qBlock {
+    display: none;
+    margin-top: 2rem;
+    padding: 2rem;
     font-family: "Tech-Headline";
+    letter-spacing: 0.2rem;
 }
 
 #multipleChoice {
@@ -142,21 +208,34 @@ input {
 
 #answers {
     display: none;
+    margin-top: 2rem;
+    padding: 2rem;
+    font-family: "Tech-Headline";
+    letter-spacing: 0.2rem;
 }
 
 #answers h2 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 #answers h3 {
-    font-size: 3rem;
+    padding: 5rem;
+    font-size: 2rem;
+
 }
 
 #results {
     font-family: "Tech-Headline";
     display: none;
+    letter-spacing: 0.2rem;
 }
 
 #results h2 {
-    padding: 5rem;
+    margin-top: 1rem;
+    font-size: 4rem;
+}
+
+#results h3 {
+    font-size: 2rem;
+    margin: 3rem;
 }
