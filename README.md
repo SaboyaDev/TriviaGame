@@ -10,3 +10,6 @@
   answer before on to the next question. 
 
 Here is the link: https://joseluissaboya.github.io/TriviaGame/
+
++++Notes:
+-Will be adding media queries to improve the responsiveness of the the game
