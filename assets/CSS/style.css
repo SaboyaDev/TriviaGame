@@ -86,14 +86,13 @@ body {
 }
 
 .jumbotron {
-    
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
     border-radius: 150px;
-    box-shadow: inset 0 0 35px 10px rgb(255, 255, 255);
+    box-shadow: inset 0 0 20px 10px rgb(0, 0, 0);
     padding: 2em;
-    margin-top:  7rem;
-    height: 38em;
+    margin-top:  5rem;
+    height: 33em;
     text-align: center;
     outline: none;
     color: rgb(0, 0, 0);
@@ -112,10 +111,11 @@ body {
 h1 {
     font-family: "Stjedise";
     color: white;
-    font-size: 2.5rem;
-    -webkit-text-stroke: 3.5px black;
+    font-size: 4.5rem;
+    -webkit-text-stroke: 5.5px black;
     letter-spacing: 0.2rem;
     text-align: center;
+    margin-top: 0.4em;
 }
 
 /* Intro-Section-Button */
@@ -124,7 +124,7 @@ h1 {
     padding: 20px;
     border: 0.2rem solid rgb(255, 255, 255);
     border-radius: 25px;
-    margin-top: 7rem;
+    margin-top: 3rem;
     background-color: white;
     font-family: "Tech-Headline";
     letter-spacing: 0.1rem;
@@ -159,7 +159,7 @@ h1 {
 }
 #submit {
     display: inline-block;
-    margin: 2.5em 20%;
+    margin: 1.5em 20%;
     padding: 10px;
     width: 150px;
     border: 4px solid black;
@@ -232,7 +232,7 @@ h1 {
 }
 
 #qBlock h2 {
-    font-size: 1.23rem;
+    font-size: 0.9rem;
 }
 
 #qBlock #question {
@@ -260,7 +260,7 @@ input {
 
 #answers {
     display: none;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     padding: 2rem;
     font-family: "Tech-Headline";
     letter-spacing: 0.2rem;
