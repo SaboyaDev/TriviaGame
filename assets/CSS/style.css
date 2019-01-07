@@ -31,9 +31,14 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+#logoImg {
+    width: 37px;
+    height: 37px;
+}
+
 .navbar a {
     color: rgb(255, 255, 255);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Technotot";
 }
 
@@ -75,19 +80,25 @@ body {
 /* -------------------------------------------------------- */
 /* Main-Content */
 /* -------------------------------------------------------- */
+#custom-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 .jumbotron {
     
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
-    border-radius: 305px;
-    box-shadow: inset 0 0 45px 35px rgb(255, 255, 255);
-    padding: 60px;
+    border-radius: 150px;
+    box-shadow: inset 0 0 35px 10px rgb(255, 255, 255);
+    padding: 2em;
     margin-top:  7rem;
     height: 38em;
     text-align: center;
     outline: none;
-    color: #FFFFFF;
-    opacity: 0.85;
+    color: rgb(0, 0, 0);
+    
+    /* opacity: .8; */
 }
 
 /* -------------------------------------------------------- */
@@ -100,10 +111,10 @@ body {
 /* Intro-Section-Font */
 h1 {
     font-family: "Stjedise";
-    color: black;
-    font-size: 4.5rem;
-    -webkit-text-stroke: 5px white;
-    letter-spacing: 0.9rem;
+    color: white;
+    font-size: 2.5rem;
+    -webkit-text-stroke: 3.5px black;
+    letter-spacing: 0.2rem;
     text-align: center;
 }
 
@@ -118,13 +129,12 @@ h1 {
     font-family: "Tech-Headline";
     letter-spacing: 0.1rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 0/1rem;
     color: white;
     background-color: black;
     cursor: pointer;
     box-shadow: 0 9px rgb(0, 0, 0);
     outline: none;
-
 }
 
 /* Intro-Section-Button-Hover */
@@ -144,9 +154,12 @@ h1 {
 /* -------------------------------------------------------- */
 
 /* Questions-Section-Button */
+.submit {
+    text-align: center;
+}
 #submit {
     display: inline-block;
-    margin: 0 25px 0 25px;
+    margin: 2.5em 20%;
     padding: 10px;
     width: 150px;
     border: 4px solid black;
@@ -156,7 +169,7 @@ h1 {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     transition: all 0.1s;
     cursor: pointer;
 }
@@ -208,28 +221,37 @@ h1 {
 
 #qBlock {
     display: none;
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: 1em;
+    padding: 1em;
     font-family: "Tech-Headline";
-    letter-spacing: 0.2rem;
-    font-size: 0.3rem !important;
+    letter-spacing: 0.15rem;
+}
+
+#test_status {
+    margin-bottom: 1.3em;
 }
 
 #qBlock h2 {
-    font-size: 1.5rem;
+    font-size: 1.23rem;
+}
+
+#qBlock #question {
+    margin-top: 1.3em;
+    margin-bottom: 2em;
+
 }
 
 #multipleChoice {
-    padding: 3rem;
+    padding: 1rem;
     text-align: left;
     font-size: 1rem;
 }
 
 /* Radio-selectors for Multiple Choice */
 input {
-    
-    width: 30px;
-    height: 30px;
+    margin-right: 1em;
+    width: 20px;
+    height: 20px;
 }
 
 /* -------------------------------------------------------- */
@@ -246,13 +268,16 @@ input {
 
 /* Displays Correct/Incorrect Message */
 #answers h2 {
-    font-size: 4rem;
+    font-size: 1.9em;
+    text-align: center;
+    margin-bottom: 3em;
 }
 
 /* Displays-Correct-Answer */
 #answers h3 {
-    padding: 5rem;
-    font-size: 2rem;
+    padding: .5rem;
+    font-size: 1.23rem;
+    text-align: left;
 
 }
 
@@ -263,15 +288,136 @@ input {
     font-family: "Tech-Headline";
     display: none;
     letter-spacing: 0.2rem;
+    margin-top: 0;
 }
 /* Header */
 #results h2 {
-    margin-top: 1rem;
-    font-size: 4rem;
+    /* margin-top:; */
+    font-size: 3rem;
 }
 
 /* Summary of Results */
 #results h3 {
     font-size: 2rem;
-    margin: 3rem;
+    margin: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+    #logoImg {
+        width: 57px;
+        height: 57px;
+    }
+    .navbar a {
+        color: rgb(255, 255, 255);
+        font-size: 2.5rem;
+        font-family: "Technotot";
+    }
+    .jumbotron {
+        background-color: rgb(0, 0, 0);
+        border: 1px solid black;
+        border-radius: 300px;
+        box-shadow: inset 0 0 85px 30px rgb(255, 255, 255);
+        padding: 2em;
+        margin-top:  7rem;
+        height: 50em;
+        text-align: center;
+        outline: none;
+        color: rgb(0, 0, 0);
+        opacity: .85;
+    }
+    #intro {
+        padding: 60px;
+    }
+    /* Intro-Section-Font */
+    h1 {
+        font-family: "Stjedise";
+        color: rgb(0, 0, 0);
+        font-size: 4.5rem;
+        -webkit-text-stroke: 4.5px rgb(255, 255, 255);
+        letter-spacing: 0.5rem;
+        text-align: center;
+    }
+    /* Intro-Section-Button */
+    .btn {
+        width: 10rem;
+        padding: 20px;
+        border: 0.4rem solid rgb(255, 255, 255);
+        border-radius: 25px;
+        margin-top: 7rem;
+        background-color: white;
+        font-family: "Tech-Headline";
+        letter-spacing: 0.1rem;
+        text-align: center;
+        font-size: 1.6rem;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        box-shadow: 0 9px rgb(0, 0, 0);
+        outline: none;
+    }
+    #qBlock {
+        display: none;
+        margin-top: 1em;
+        padding: 3.5em;
+        font-family: "Tech-Headline";
+        letter-spacing: 0.15rem;
+        color: white;
+    }
+    #qBlock h2 {
+        font-size: 2rem;
+    }
+    #multipleChoice {
+        padding: 1rem;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    #answers {
+        display: none;
+        margin-top: 2rem;
+        padding: 2rem;
+        font-family: "Tech-Headline";
+        letter-spacing: 0.2rem;
+        color: white;
+    }
+    /* Displays Correct/Incorrect Message */
+    #answers h2 {
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 3em;
+    }
+    /* Displays-Correct-Answer */
+    #answers h3 {
+        padding: .5rem;
+        font-size: 2rem;
+        text-align: center;
+
+    }
+    #results {
+        font-family: "Tech-Headline";
+        display: none;
+        letter-spacing: 0.2rem;
+        margin-top: 0;
+        color: white;
+    }
+    #results h3 {
+        font-size: 2rem;
+        margin: 3.5rem;
+    }
+    /* Questions-Section-Button */
+    #submit {
+        display: inline-block;
+        margin: 1em 20%;
+        padding: 10px;
+        width: 150px;
+        border: 4px solid black;
+        border-radius: 20px;
+        box-shadow: 0 9px rgb(0, 0, 0);
+        outline: none;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 2rem;
+        transition: all 0.1s;
+        cursor: pointer;
+    }
 }

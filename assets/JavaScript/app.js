@@ -62,10 +62,10 @@ function renderQuestion() {
         chB = questionList[pos][2];
         chC = questionList[pos][3];
         $("#question").append("<h2>" + question + "</h2>");
-        $("#multipleChoice").append("<input type='radio' name='choices' value='A'>" + chA + "<br>");
-        $("#multipleChoice").append("<input type='radio' name='choices' value='B'>" + chB + "<br>");
+        $("#multipleChoice").append("<input type='radio' name='choices' value='A'>" + chA + "<br><br>");
+        $("#multipleChoice").append("<input type='radio' name='choices' value='B'>" + chB + "<br><br>");
         $("#multipleChoice").append("<input type='radio' name='choices' value='C'>" + chC + "<br><br>");
-        $("#multipleChoice").append("<button id='submit' style='vertical-align:middle'> <span>Submit</span></button>");
+        $("#multipleChoice").append("<div class='submit'><button id='submit' style='vertical-align:middle'> <span>Submit</span></button></div>");
         // Starts the counter and calls the Decrement Function
         intervalId = setInterval(decrement, 1000);
         $("#submit").on("click", checkAnswer); // it waits for a click event and stops the timer
@@ -151,7 +151,7 @@ function incorrectAnswer() {
     $("#qBlock").hide();
     $("#answers").show();
     $("#answers").append("<h2>InCorrect!</h2>");
-    $("#answers").append("<h3>The correct answer is : " + "( " +questionList[pos][4] + " )" + " - " + rightAnswer + "</h3>");
+    $("#answers").append("<h3>The correct answer is :" + "<br><br>" +questionList[pos][4] + " - " + rightAnswer + "</h3>");
 }
 
 // resets timer value and deletes any content created from the previous question
