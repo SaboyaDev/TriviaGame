@@ -9,7 +9,7 @@
 - If you run out of time the game will promp you wit a notice that time's up and it will show you the right
   answer before on to the next question. 
 
-Here is the link: https://joseluissaboya.github.io/TriviaGame/
+Here is the link: https://saboyadev.github.io/TriviaGame/
 
 +++Notes:
 -Will be adding media queries to improve the responsiveness of the the game
